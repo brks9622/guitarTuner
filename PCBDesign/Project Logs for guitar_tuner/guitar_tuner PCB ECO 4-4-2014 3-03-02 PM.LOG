@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=VDC Pin=C14-1
+Removed Pin From Net: NetName=GND Pin=C14-2
+Removed Pin From Net: NetName=VDACPOT Pin=Pot1-2
+Removed Pin From Net: NetName=GND Pin=Pot1-3
+Added Component: Designator=C14(CAPR5-4X5)
+Added Component: Designator=LTC1661(LTC1661)
+Added Pin To Net: NetName=VDC Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C14-2
+Added Pin To Net: NetName=P1.0 Pin=LTC1661-1
+Added Pin To Net: NetName=P3.3 Pin=LTC1661-2
+Added Pin To Net: NetName=P3.1 Pin=LTC1661-3
+Added Pin To Net: NetName=MSPOWER Pin=LTC1661-4
+Added Pin To Net: NetName=VDAC Pin=LTC1661-5
+Added Pin To Net: NetName=GND Pin=LTC1661-6
+Added Pin To Net: NetName=5V Pin=LTC1661-7
+Added Pin To Net: NetName=GND Pin=Pot1-2
+Added Pin To Net: NetName=VDACPOT Pin=Pot1-3
+Added Member To Class: ClassName=guitar_tuner Member=Component C14 Cap Pol1
+Added Member To Class: ClassName=guitar_tuner Member=Component LTC1661

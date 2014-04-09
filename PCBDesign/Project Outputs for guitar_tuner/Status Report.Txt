@@ -1,0 +1,22 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [guitar_tuner.PrjPCB]
+   Generated File[guitar_tuner.GTL]
+   Generated File[guitar_tuner.GBL]
+   Generated File[guitar_tuner.GPB]
+   Generated File[guitar_tuner.GPT]
+   Generated File[guitar_tuner.GTO]
+   Generated File[guitar_tuner.GTS]
+   Generated File[guitar_tuner.GBS]
+   Generated File[guitar_tuner.GM13]
+   Generated File[guitar_tuner.GM15]
+   Generated File[guitar_tuner.GKO]
+   Generated File[guitar_tuner.RUL]
+   Generated File[guitar_tuner.EXTREP]
+   Generated File[guitar_tuner.REP]
+
+
+Files Generated   : 13
+Documents Printed : 0
+
+Finished Output Generation At 4:39:57 PM On 4/6/2014

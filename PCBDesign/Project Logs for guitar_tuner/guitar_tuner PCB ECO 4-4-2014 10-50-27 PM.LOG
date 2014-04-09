@@ -1,0 +1,18 @@
+Added Component: Designator=SIP(RPack)
+Added Component: Designator=Switch(LTC1661)
+Added Pin To Net: NetName=P2.1 Pin=SIP-1
+Added Pin To Net: NetName=P2.2 Pin=SIP-2
+Added Pin To Net: NetName=P3.0 Pin=SIP-3
+Added Pin To Net: NetName=GND Pin=Switch-1
+Added Pin To Net: NetName=GND Pin=Switch-2
+Added Pin To Net: NetName=GND Pin=Switch-3
+Added Pin To Net: NetName=GND Pin=Switch-4
+Added Pin To Net: NetName=P2.1 Pin=Switch-5
+Added Pin To Net: NetName=P2.2 Pin=Switch-6
+Added Pin To Net: NetName=P3.0 Pin=Switch-7
+Added Pin To Net: NetName=NetSIP_4 Pin=SIP-4
+Added Pin To Net: NetName=NetSIP_4 Pin=Switch-8
+Added Net: Name=NetSIP_4
+Added Member To Class: ClassName=guitar_tuner Member=Component SIP Component_1
+Added Member To Class: ClassName=guitar_tuner Member=Component Switch Component_1
+Added Room: Name=guitar_tuner

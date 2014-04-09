@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=NMI Pin=R3-1
+Removed Pin From Net: NetName=3V Pin=R3-2
+Change Component Designator: OldDesignator=U1 NewDesignator=LM741
+Added Component: Designator=R3(AXIAL-0.3)
+Added Pin To Net: NetName=NMI Pin=R3-1
+Added Pin To Net: NetName=3V Pin=R3-2
+Change Net Name : Old Net Name=NetLT1632_1 New Net Name=NetLM741_3
+Added Member To Class: ClassName=LM386 Member=Component R11 Res1

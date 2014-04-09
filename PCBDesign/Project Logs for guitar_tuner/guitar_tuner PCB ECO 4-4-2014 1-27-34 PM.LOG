@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NMI Pin=R3-1
+Removed Pin From Net: NetName=DVCC Pin=R3-2
+Added Component: Designator=R3(AXIAL-0.3)
+Added Pin To Net: NetName=NMI Pin=R3-1
+Added Pin To Net: NetName=DVCC Pin=R3-2

@@ -1,0 +1,11 @@
+Added Component: Designator=R17(AXIAL-0.3)
+Added Component: Designator=R18(AXIAL-0.3)
+Added Pin To Net: NetName=5V Pin=R17-1
+Added Pin To Net: NetName=GND Pin=R18-1
+Added Pin To Net: NetName=NetR17_2 Pin=R17-2
+Added Pin To Net: NetName=NetR17_2 Pin=R18-2
+Added Pin To Net: NetName=NetR17_2 Pin=Vin1-2
+Added Net: Name=NetR17_2
+Added Member To Class: ClassName=guitar_tuner Member=Component C14 Cap Pol1
+Added Member To Class: ClassName=guitar_tuner Member=Component R17 Res1
+Added Member To Class: ClassName=guitar_tuner Member=Component R18 Res1

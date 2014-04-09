@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=NMI Pin=R3-1
+Removed Pin From Net: NetName=3V Pin=R3-2
+Removed Pin From Net: NetName=NetC18_1 Pin=R11-1
+Removed Pin From Net: NetName=GND Pin=R11-2
+Removed Member From Class: ClassName=LM386 Member=R14
+Added Component: Designator=C15(RAD-0.3)
+Added Component: Designator=R3(AXIAL-0.3)
+Added Component: Designator=R11(AXIAL-0.3)
+Added Pin To Net: NetName=2.5V Pin=C15-1
+Added Pin To Net: NetName=NetR4_1 Pin=C15-2
+Added Pin To Net: NetName=NMI Pin=R3-1
+Added Pin To Net: NetName=3V Pin=R3-2
+Added Pin To Net: NetName=NetC18_1 Pin=R11-1
+Added Pin To Net: NetName=NetLT1632_2 Pin=R11-1
+Added Pin To Net: NetName=GND Pin=R11-2
+Added Pin To Net: NetName=NetLT1632_1 Pin=R11-2
+Change Net Name : Old Net Name=NetR4_1 New Net Name=NetC15_2
+Added Member To Class: ClassName=LM386 Member=Component R11 Res1
+Added Member To Class: ClassName=SignalAmp Member=Component R11 Res1

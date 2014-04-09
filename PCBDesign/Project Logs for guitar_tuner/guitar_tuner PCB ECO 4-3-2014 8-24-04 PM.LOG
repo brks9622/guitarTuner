@@ -1,0 +1,2 @@
+Change Net Name : Old Net Name=DVSS New Net Name=GND
+Change Rule Scope 1 : Old Scope=InNet('DVSS') New Scope=InNet('GND')

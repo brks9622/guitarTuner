@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=NMI Pin=R3-1
+Removed Pin From Net: NetName=3V Pin=R3-2
+Removed Pin From Net: NetName=NetLT1632_2 Pin=R11-1
+Removed Pin From Net: NetName=NetLT1632_1 Pin=R11-2
+Removed Member From Class: ClassName=SignalAmp Member=C15
+Removed Member From Class: ClassName=SignalAmp Member=R11
+Change Component Designator: OldDesignator=C15 NewDesignator=C51
+Added Component: Designator=C52(RAD-0.1)
+Added Component: Designator=R3(AXIAL-0.3)
+Added Component: Designator=R51(AXIAL-0.3)
+Added Pin To Net: NetName=GND Pin=C52-1
+Added Pin To Net: NetName=5V Pin=C52-2
+Added Pin To Net: NetName=NMI Pin=R3-1
+Added Pin To Net: NetName=3V Pin=R3-2
+Added Pin To Net: NetName=NetC18_1 Pin=R11-1
+Added Pin To Net: NetName=GND Pin=R11-2
+Added Pin To Net: NetName=NetLT1632_2 Pin=R51-1
+Added Pin To Net: NetName=NetLT1632_1 Pin=R51-2
+Change Net Name : Old Net Name=NetC15_2 New Net Name=NetC51_2
+Added Member To Class: ClassName=SignalAmp Member=Component C51 Cap
+Added Member To Class: ClassName=SignalAmp Member=Component C52 Cap
+Added Member To Class: ClassName=SignalAmp Member=Component R51 Res1
+Added Room: Name=VoltageSources

@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: guitar_tuner.PcbDoc   4/6/2014  4:39:12 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : guitar_tuner.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        27.56mil (0.70002mm)     Round          37               18.83 Inch (478.22 mm)
+T2        28mil (0.7112mm)         Round          36               26.49 Inch (672.74 mm)
+T3        31.5mil (0.8001mm)       Round          18               8.37 Inch (212.53 mm)
+T4        33.46mil (0.84988mm)     Round          36               21.18 Inch (537.92 mm)
+T5        35.43mil (0.89992mm)     Round          124              27.26 Inch (692.51 mm)
+T6        39.37mil (1mm)           Round          3                0.20 Inch (5.08 mm)
+T7        125mil (3.175mm)         Round          4                14.67 Inch (372.62 mm)
+---------------------------------------------------------------------------
+Totals                                            258              116.99 Inch (2971.61 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

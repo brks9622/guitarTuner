@@ -1,0 +1,5 @@
+Added Component: Designator=Pot1(VR5)
+Added Pin To Net: NetName=VDAC Pin=Pot1-1
+Added Pin To Net: NetName=GND Pin=Pot1-2
+Added Pin To Net: NetName=VDACPOT Pin=Pot1-3
+Added Member To Class: ClassName=guitar_tuner Member=Component Pot1 RPot

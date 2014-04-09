@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=5V Pin=R1-1
+Removed Pin From Net: NetName=2.5V Pin=R1-2
+Removed Pin From Net: NetName=GND Pin=R2-1
+Removed Pin From Net: NetName=NMI Pin=R3-1
+Removed Pin From Net: NetName=MSPOWER Pin=R3-2
+Change Component Designator: OldDesignator=R1 NewDesignator=R3
+Change Component Designator: OldDesignator=R2 NewDesignator=R1
+Change Component Designator: OldDesignator=R3 NewDesignator=R2
+Added Pin To Net: NetName=5V Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=2.5V Pin=R2-2
+Added Pin To Net: NetName=NMI Pin=R3-1
+Added Pin To Net: NetName=MSPOWER Pin=R3-2

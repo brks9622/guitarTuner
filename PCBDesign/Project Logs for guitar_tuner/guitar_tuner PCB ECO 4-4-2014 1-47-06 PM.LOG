@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=VDC Pin=C14-1
+Removed Pin From Net: NetName=GND Pin=C14-2
+Change Component Footprint: Designator=C8 Old Footprint=RAD-0.3 New Footprint=RAD-0.1
+Added Component: Designator=C14(CAPR5-4X5)
+Added Pin To Net: NetName=VDC Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C14-2
+Added Pin To Net: NetName=2.5V Pin=Vin1-2
+Added Net: Name=2.5V
+Added Member To Class: ClassName=guitar_tuner Member=Component C8 Cap
+Added Member To Class: ClassName=guitar_tuner Member=Component C9 Cap
+Added Member To Class: ClassName=guitar_tuner Member=Component C10 Cap Pol1
+Added Member To Class: ClassName=guitar_tuner Member=Component C11 Cap
+Added Member To Class: ClassName=guitar_tuner Member=Component C14 Cap Pol1
+Added Member To Class: ClassName=guitar_tuner Member=Component R3 Res1
+Added Member To Class: ClassName=guitar_tuner Member=Component R13 Res1
+Added Member To Class: ClassName=guitar_tuner Member=Component R15 Res1

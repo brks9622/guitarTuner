@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=5V Pin=C3-1
+Removed Pin From Net: NetName=GND Pin=C3-2
+Removed Pin From Net: NetName=3V Pin=C4-1
+Removed Pin From Net: NetName=GND Pin=C4-2
+Removed Pin From Net: NetName=5V Pin=LM3940-1
+Removed Pin From Net: NetName=GND Pin=LM3940-2
+Removed Pin From Net: NetName=3V Pin=LM3940-3
+Removed Pin From Net: NetName=3V Pin=Programmer1-4
+Removed Pin From Net: NetName=NMI Pin=R3-1
+Removed Pin From Net: NetName=3V Pin=R3-2
+Removed Member From Class: ClassName=VoltageSources Member=C3
+Removed Member From Class: ClassName=VoltageSources Member=C4
+Removed Member From Class: ClassName=VoltageSources Member=LM3940
+Added Component: Designator=R3(AXIAL-0.3)
+Added Pin To Net: NetName=3V Pin=Programmer1-2
+Added Pin To Net: NetName=NMI Pin=R3-1
+Added Pin To Net: NetName=3V Pin=R3-2
+Change Net Name : Old Net Name=3V New Net Name=DVCC

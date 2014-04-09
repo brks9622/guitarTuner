@@ -1,0 +1,67 @@
+Removed Pin From Net: NetName=GND Pin=C13-1
+Removed Pin From Net: NetName=5V Pin=C13-2
+Removed Pin From Net: NetName=GND Pin=C14-1
+Removed Pin From Net: NetName=5V Pin=C14-2
+Removed Pin From Net: NetName=GND Pin=C16-2
+Removed Pin From Net: NetName=GND Pin=C17-2
+Removed Pin From Net: NetName=GND Pin=C50-1
+Removed Pin From Net: NetName=5V Pin=C50-2
+Removed Pin From Net: NetName=P1.0 Pin=LTC1661-1
+Removed Pin From Net: NetName=P3.3 Pin=LTC1661-2
+Removed Pin From Net: NetName=P3.1 Pin=LTC1661-3
+Removed Pin From Net: NetName=3V Pin=LTC1661-4
+Removed Pin From Net: NetName=5V Pin=LTC1661-6
+Removed Pin From Net: NetName=GND Pin=LTC1661-7
+Removed Pin From Net: NetName=VDAC Pin=LTC1661-8
+Removed Pin From Net: NetName=NMI Pin=R1-1
+Removed Pin From Net: NetName=3V Pin=R1-2
+Removed Pin From Net: NetName=NetLT1632_2 Pin=R2-1
+Removed Pin From Net: NetName=GND Pin=R4-1
+Removed Pin From Net: NetName=NetLT1632_2 Pin=R4-2
+Removed Pin From Net: NetName=VIN Pin=R6-1
+Removed Pin From Net: NetName=GND Pin=Vin1-2
+Removed Member From Class: ClassName=SignalAmp Member=C13
+Removed Member From Class: ClassName=SignalAmp Member=C16
+Removed Member From Class: ClassName=SignalAmp Member=C17
+Removed Member From Class: ClassName=SignalAmp Member=R2
+Change Component DesignItemId : Designator=LT1632 Old DesignItemId=LM158JG New DesignItemId=LF353P
+Change Component Footprint: Designator=LT1632 Old Footprint=JG008 New Footprint=P008
+Change Component Comment : Designator=LT1632 Old Comment=LT1632 New Comment=LF353P
+Change Component Designator: OldDesignator=LM741 NewDesignator=U1
+Change Component Designator: OldDesignator=R3 NewDesignator=R7
+Change Component Designator: OldDesignator=R7 NewDesignator=R8
+Change Component Designator: OldDesignator=R8 NewDesignator=R9
+Change Component Designator: OldDesignator=R9 NewDesignator=R10
+Change Component Designator: OldDesignator=R10 NewDesignator=R11
+Change Component Designator: OldDesignator=R11 NewDesignator=R12
+Change Component Designator: OldDesignator=R12 NewDesignator=R13
+Change Component Designator: OldDesignator=R13 NewDesignator=R14
+Change Component Designator: OldDesignator=R14 NewDesignator=R15
+Change Component Designator: OldDesignator=R15 NewDesignator=R16
+Added Component: Designator=R3(AXIAL-0.3)
+Added Pin To Net: NetName=5V Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C14-2
+Added Pin To Net: NetName=NetLM741_2 Pin=LT1632-3
+Added Pin To Net: NetName=5V Pin=R1-1
+Added Pin To Net: NetName=NetLM741_2 Pin=R1-2
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=NetLM741_2 Pin=R2-2
+Added Pin To Net: NetName=NMI Pin=R3-1
+Added Pin To Net: NetName=3V Pin=R3-2
+Added Pin To Net: NetName=VIN Pin=R5-1
+Added Pin To Net: NetName=NetLT1632_2 Pin=R6-2
+Added Pin To Net: NetName=NetLM741_2 Pin=Vin1-2
+Change Net Name : Old Net Name=NetLM741_2 New Net Name=2.5V
+Change Net Name : Old Net Name=NetR14_1 New Net Name=NetR15_1
+Change Net Name : Old Net Name=NetR15_1 New Net Name=NetR16_1
+Added Pin To Net: NetName=NetLT1632_1 Pin=LT1632-1
+Added Pin To Net: NetName=NetLT1632_1 Pin=R4-2
+Added Pin To Net: NetName=NetLT1632_1 Pin=R8-2
+Added Pin To Net: NetName=NetLT1632_1 Pin=U1-3
+Added Net: Name=NetLT1632_1
+Added Pin To Net: NetName=NetR4_1 Pin=R4-1
+Added Pin To Net: NetName=NetR4_1 Pin=R5-2
+Added Pin To Net: NetName=NetR4_1 Pin=R6-1
+Added Net: Name=NetR4_1
+Added Member To Class: ClassName=VoltageSources Member=Component R1 Res1
+Added Member To Class: ClassName=VoltageSources Member=Component R2 Res1
