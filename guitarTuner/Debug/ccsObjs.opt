@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 "./main.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+=======
+"./lcd_test.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+>>>>>>> af5f9d93e9877f1ee07a172054dae3091621377d

@@ -36,59 +36,62 @@ int main(void){
 
 }
 
-void lcd_command(char uf_lcd_x){
-P4DIR = 0xFF;
-uf_lcd_temp = uf_lcd_x;
-P4OUT = 0x00;
-__delay_cycles(22000);
-uf_lcd_x = uf_lcd_x >> 4;
-uf_lcd_x = uf_lcd_x & 0x0F;
-uf_lcd_x = uf_lcd_x | 0x20;
-P4OUT = uf_lcd_x;
-__delay_cycles(22000);
-uf_lcd_x = uf_lcd_x & 0x0F;
-P4OUT = uf_lcd_x;
-__delay_cycles(22000);
-P4OUT = 0x00;
-__delay_cycles(22000);
-uf_lcd_x = uf_lcd_temp;
-uf_lcd_x = uf_lcd_x & 0x0F;
-uf_lcd_x = uf_lcd_x | 0x20;
-P4OUT = uf_lcd_x;
-__delay_cycles(22000);
-uf_lcd_x = uf_lcd_x & 0x0F;
-P4OUT = uf_lcd_x;
-__delay_cycles(22000);
-}
 void lcd_init(void){
-lcd_command(0x33);
-lcd_command(0x32);
-lcd_command(0x2C);
-lcd_command(0x0C);
-lcd_command(0x01);
+	lcd_command(0x33);
+	lcd_command(0x32);
+	lcd_command(0x2C);
+	lcd_command(0x0C);
+	lcd_command(0x01);
 }
 
+
+
+void lcd_command(char uf_lcd_x){
+	P4DIR = 0xFF;
+	uf_lcd_temp = uf_lcd_x;
+	P4OUT = 0x00;
+	__delay_cycles(22000);
+	uf_lcd_x = uf_lcd_x >> 4;
+	uf_lcd_x = uf_lcd_x & 0x0F;
+	uf_lcd_x = uf_lcd_x | 0x20;
+	P4OUT = uf_lcd_x;
+	__delay_cycles(22000);
+	uf_lcd_x = uf_lcd_x & 0x0F;
+	P4OUT = uf_lcd_x;
+	__delay_cycles(22000);
+	P4OUT = 0x00;
+	__delay_cycles(22000);
+	uf_lcd_x = uf_lcd_temp;
+	uf_lcd_x = uf_lcd_x & 0x0F;
+	uf_lcd_x = uf_lcd_x | 0x20;
+	P4OUT = uf_lcd_x;
+	__delay_cycles(22000);
+	uf_lcd_x = uf_lcd_x & 0x0F;
+	P4OUT = uf_lcd_x;
+	__delay_cycles(22000);
+}
+
+
 void lcd_char(char uf_lcd_x){
-P4DIR = 0xFF;
-uf_lcd_temp = uf_lcd_x;
-P4OUT = 0x10;
-__delay_cycles(22000);
-uf_lcd_x = uf_lcd_x >> 4;
-uf_lcd_x = uf_lcd_x & 0x0F;
-uf_lcd_x = uf_lcd_x | 0x30;
-P4OUT = uf_lcd_x;
-__delay_cycles(22000);
-uf_lcd_x = uf_lcd_x & 0x1F;
-P4OUT = uf_lcd_x;
-__delay_cycles(22000);
-P4OUT = 0x10;
-__delay_cycles(22000);
-uf_lcd_x = uf_lcd_temp;
-uf_lcd_x = uf_lcd_x & 0x0F;
-uf_lcd_x = uf_lcd_x | 0x30;
-P4OUT = uf_lcd_x;
-__delay_cycles(22000);
-uf_lcd_x = uf_lcd_x & 0x1F;
-P4OUT = uf_lcd_x;
-__delay_cycles(22000);
+	P4DIR = 0xFF;
+	uf_lcd_temp = uf_lcd_x;
+	P4OUT = 0x10;
+	__delay_cycles(22000);
+	uf_lcd_x = uf_lcd_x >> 4;
+	uf_lcd_x = uf_lcd_x & 0x0F;
+	uf_lcd_x = uf_lcd_x | 0x30;
+	P4OUT = uf_lcd_x;
+	__delay_cycles(22000);
+	uf_lcd_x = uf_lcd_x & 0x1F;
+	P4OUT = uf_lcd_x;
+	__delay_cycles(22000);
+	P4OUT = 0x10;
+	__delay_cycles(22000);
+	uf_lcd_x = uf_lcd_temp;
+	uf_lcd_x = uf_lcd_x & 0x0F;
+	uf_lcd_x = uf_lcd_x | 0x30;
+	P4OUT = uf_lcd_x;
+	__delay_cycles(22000);
+	uf_lcd_x = uf_lcd_x & 0x1F;
+	P4OUT = uf_lcd_x;
 }

@@ -9,5 +9,10 @@
 	<linkerCommandFile value="lnk_msp430f2272.cmd"/>
 	<rts value="libc.a"/>
 	<templateProperties value="id=com.ti.common.project.core.emptyProjectWithMainTemplate_msp430,"/>
+<<<<<<< HEAD
 	<isTargetManual value="true"/>
+=======
+	<isTargetManual value="false"/>
+>>>>>>> af5f9d93e9877f1ee07a172054dae3091621377d
+	<isTargetManual value="false"/>
 </projectOptions>
