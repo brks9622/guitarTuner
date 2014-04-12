@@ -4,11 +4,15 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccsv5/tools/compiler/msp430_4.2.3
+CG_TOOL_ROOT := C:/ti/ccsv5/tools/compiler/msp430_4.2.1
 
 ORDERED_OBJS += \
 $(GEN_CMDS__FLAG) \
+<<<<<<< HEAD
+"./main.obj" \
+=======
 "./lcd_test.obj" \
+>>>>>>> af5f9d93e9877f1ee07a172054dae3091621377d
 "../lnk_msp430f2274.cmd" \
 -l"libc.a" \
 
@@ -115,15 +119,24 @@ all: guitarTuner.out
 guitarTuner.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MSP430 Linker'
+<<<<<<< HEAD
+	"C:/ti/ccsv5/tools/compiler/msp430_4.2.1/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"guitarTuner.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccsv5/ccs_base/msp430/include" -i"C:/ti/ccsv5/tools/compiler/msp430_4.2.1/lib" -i"C:/ti/ccsv5/tools/compiler/msp430_4.2.1/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="guitarTuner_linkInfo.xml" --rom_model -o "guitarTuner.out" $(ORDERED_OBJS)
+=======
 	"C:/ti/ccsv5/tools/compiler/msp430_4.2.3/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"guitarTuner.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccsv5/ccs_base/msp430/include" -i"C:/ti/ccsv5/tools/compiler/msp430_4.2.3/lib" -i"C:/ti/ccsv5/tools/compiler/msp430_4.2.3/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="guitarTuner_linkInfo.xml" --rom_model -o "guitarTuner.out" $(ORDERED_OBJS)
+>>>>>>> af5f9d93e9877f1ee07a172054dae3091621377d
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
 	-$(RM) $(MSP430_EXECUTABLE_OUTPUTS__QUOTED) "guitarTuner.out"
+<<<<<<< HEAD
+	-$(RM) "main.pp" 
+	-$(RM) "main.obj" 
+=======
 	-$(RM) "lcd_test.pp" 
 	-$(RM) "lcd_test.obj" 
+>>>>>>> af5f9d93e9877f1ee07a172054dae3091621377d
 	-@echo 'Finished clean'
 	-@echo ' '
 
