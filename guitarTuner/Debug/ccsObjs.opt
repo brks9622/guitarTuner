@@ -1,1 +1,1 @@
-"./Guitar_Tuner.obj" "../lnk_msp430f2272.cmd" -l"libc.a" 
+"./main.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 

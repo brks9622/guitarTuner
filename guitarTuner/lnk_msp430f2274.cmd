@@ -31,7 +31,7 @@
 /* ============================================================================ */
 
 /******************************************************************************/
-/* lnk_msp430f2272.cmd - LINKER COMMAND FILE FOR LINKING MSP430F2272 PROGRAMS     */
+/* lnk_msp430f2274.cmd - LINKER COMMAND FILE FOR LINKING MSP430F2274 PROGRAMS     */
 /*                                                                            */
 /*   Usage:  lnk430 <obj files...>    -o <out file> -m <map file> lnk.cmd     */
 /*           cl430  <src files...> -z -o <out file> -m <map file> lnk.cmd     */
@@ -128,5 +128,5 @@ SECTIONS
 /* INCLUDE PERIPHERALS MEMORY MAP                                           */
 /****************************************************************************/
 
--l msp430f2272.cmd
+-l msp430f2274.cmd
 
