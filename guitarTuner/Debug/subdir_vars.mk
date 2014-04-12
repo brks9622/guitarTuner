@@ -4,24 +4,24 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CMD_SRCS += \
-../lnk_msp430f2272.cmd 
+../lnk_msp430f2274.cmd 
 
 C_SRCS += \
-../Guitar_Tuner.c 
+../lcd_test.c 
 
 OBJS += \
-./Guitar_Tuner.obj 
+./lcd_test.obj 
 
 C_DEPS += \
-./Guitar_Tuner.pp 
+./lcd_test.pp 
 
 C_DEPS__QUOTED += \
-"Guitar_Tuner.pp" 
+"lcd_test.pp" 
 
 OBJS__QUOTED += \
-"Guitar_Tuner.obj" 
+"lcd_test.obj" 
 
 C_SRCS__QUOTED += \
-"../Guitar_Tuner.c" 
+"../lcd_test.c" 
 
 
