@@ -7,21 +7,21 @@ CMD_SRCS += \
 ../lnk_msp430f2274.cmd 
 
 C_SRCS += \
-../main.c 
+../Guitar_Tuner.c 
 
 OBJS += \
-./main.obj 
+./Guitar_Tuner.obj 
 
 C_DEPS += \
-./main.pp 
+./Guitar_Tuner.pp 
 
 C_DEPS__QUOTED += \
-"main.pp" 
+"Guitar_Tuner.pp" 
 
 OBJS__QUOTED += \
-"main.obj" 
+"Guitar_Tuner.obj" 
 
 C_SRCS__QUOTED += \
-"../main.c" 
+"../Guitar_Tuner.c" 
 
 

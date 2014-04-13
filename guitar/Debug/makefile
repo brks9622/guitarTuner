@@ -8,7 +8,7 @@ CG_TOOL_ROOT := C:/ti/ccsv5/tools/compiler/msp430_4.2.1
 
 ORDERED_OBJS += \
 $(GEN_CMDS__FLAG) \
-"./main.obj" \
+"./Guitar_Tuner.obj" \
 "../lnk_msp430f2274.cmd" \
 -l"libc.a" \
 
@@ -122,8 +122,8 @@ guitar.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(MSP430_EXECUTABLE_OUTPUTS__QUOTED) "guitar.out"
-	-$(RM) "main.pp" 
-	-$(RM) "main.obj" 
+	-$(RM) "Guitar_Tuner.pp" 
+	-$(RM) "Guitar_Tuner.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

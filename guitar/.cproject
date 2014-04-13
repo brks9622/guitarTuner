@@ -74,7 +74,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="Guitar_Tuner.c|test_led.c|test_comparator.c|lcd_test.c|DAC.c|comparator_withInts.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="lcd_test.c|main.c|test_led.c|test_comparator.c|DAC.c|comparator_withInts.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
