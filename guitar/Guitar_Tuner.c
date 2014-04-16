@@ -6,7 +6,7 @@ volatile int zeroCrossing = 0;
 int frequencyMatch = 0;
 float reading1;
 float reading2;
-int readings = 2;
+const int readings = 2;
 int msCounter = 9;
 
 //Frequencies
@@ -16,11 +16,17 @@ int msCounter = 9;
 	const int G		= 196;
 	const int B		= 247;
 	const int high_E= 330;
-	int left = 0;
-	int leftMiddle = 0;
-	int middle = 0;
-	int rightMiddle = 0;
-	int right = 0;
+	const int lefreq = 1560;
+	const int afreq =  1164;
+	const int dfreq =  870;
+	const int gfreq =  653;
+	const int bfreq =  518;
+	const int hefreq = 387;
+	const int left = 0;
+	const int leftMiddle = 0;
+	const int middle = 0;
+	const int rightMiddle = 0;
+	const int right = 0;
 	int differential = 0;
 	void show_scale(void);
 
@@ -47,11 +53,18 @@ int updateRead = 0;
 
 //SPI
 void init_spi(void);
-void init_sin(void);
 int spi_freq = 0;
-int index = 0;
+unsigned int index = 0;
 int control = 0;
-int waves[50];
+int samples = 125;
+const int waves[]={0x200,0x219,0x233,0x24c,0x266,0x27f,0x297,0x2b0,0x2c8,0x2df,0x2f6,0x30c,0x322,0x336,0x34a,0x35e,
+		0x370,0x381,0x392,0x3a1,0x3af,0x3bd,0x3c9,0x3d4,0x3dd,0x3e6,0x3ed,0x3f3,0x3f8,0x3fc,0x3fe,0x3ff,
+		0x3ff,0x3fd,0x3fa,0x3f6,0x3f0,0x3ea,0x3e2,0x3d9,0x3ce,0x3c3,0x3b6,0x3a8,0x39a,0x38a,0x379,0x367,
+		0x354,0x341,0x32c,0x317,0x301,0x2eb,0x2d3,0x2bc,0x2a4,0x28b,0x272,0x259,0x240,0x226,0x20c,0x1f3,
+		0x1d9,0x1bf,0x1a6,0x18d,0x174,0x15b,0x143,0x12c,0x114,0xfe,0xe8,0xd3,0xbe,0xab,0x98,0x86,
+		0x75,0x65,0x57,0x49,0x3c,0x31,0x26,0x1d,0x15,0xf,0x9,0x5,0x2,0x0,0x0,0x1,
+		0x3,0x7,0xc,0x12,0x19,0x22,0x2b,0x36,0x42,0x50,0x5e,0x6d,0x7e,0x8f,0xa1,0xb5,
+		0xc9,0xdd,0xf3,0x109,0x120,0x137,0x14f,0x168,0x180,0x199,0x1b3,0x1cc,0x1e6,0x200};
 
 //INTERRUPT FOR SPI
 void init_timerA_interrupt(void);
@@ -72,6 +85,7 @@ int main(void){
 	DCOCTL = CALDCO_16MHZ;
 
 	P1DIR &= 0xFB;
+	P2DIR &= 0x02;
 	int temp = P1IN & 0x04;
 		//LCD
 		lcd_init();
@@ -81,7 +95,6 @@ int main(void){
 
 		//SPI
 		init_spi();
-		init_sin();
 
 		//INTERRUPT
 		init_timerA_interrupt();
@@ -92,8 +105,8 @@ int main(void){
 
 	for (;;){
 		//Tune by ear
-		temp = P1IN & 0x04;
-		if(temp == 0x04){
+		temp = P2IN & 0x02;
+		if(temp == 0x02){
 			//adc_init();
 			ADC10CTL0 |= ADC10IE;	//Enable ADC
 			TA0CTL |= MC_1;	//Enable Timer A
@@ -236,25 +249,25 @@ __interrupt void Timer_A (void)
 	while ((IFG2 & UCB0TXIFG) == 0);
 	P1OUT |= 0x01;
 	if(spi_freq == low_E){
-		TA0CCR0 = 3902;
+		TA0CCR0 = lefreq;
 	}
 	else if(spi_freq == A){
-		TA0CCR0 = 2909;
+		TA0CCR0 = afreq;
 	}
 	else if(spi_freq == D){
-		TA0CCR0 = 2177;
+		TA0CCR0 = dfreq;
 	}
 	else if(spi_freq == G){
-		TA0CCR0 = 1633;
+		TA0CCR0 = gfreq;
 	}
 	else if(spi_freq == B){
-		TA0CCR0 = 1296;
+		TA0CCR0 = bfreq;
 	}
 	else {
-		TA0CCR0 = 980;
+		TA0CCR0 = hefreq;
 	}
 	index++;
-	if(index == 51) index = 0;
+	if(index == samples) index = 0;
 }
 
 #pragma vector=TIMERB0_VECTOR
@@ -452,15 +465,4 @@ void lcd_char(char uf_lcd_x){
 	__delay_cycles(22000);
 	uf_lcd_x = uf_lcd_x & 0x1F;
 	P4OUT = uf_lcd_x;
-}
-
-void init_sin(){
-	int i;
-	int temp;
-	float radians = 7.2*PI/180.0;
-	//Sin wave
-	for(i = 0; i < 51; i++){
-		temp = (float)0x1FF*sin((float)radians*(float)i)+(float)0x1FF;
-		waves[i] = temp;
-	}
 }
