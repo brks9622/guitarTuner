@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetLM741_2 Pin=LM741-2
+Added Pin To Net: NetName=NetR17_2 Pin=LM741-2
+Change Net Name : Old Net Name=NetLM741_2 New Net Name=NetR5_1
+Change Net Name : Old Net Name=NetR17_2 New Net Name=2.5V
+Added Room: Name=guitar_tuner
