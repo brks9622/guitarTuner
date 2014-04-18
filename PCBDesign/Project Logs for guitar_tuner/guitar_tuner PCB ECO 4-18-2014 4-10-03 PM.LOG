@@ -1,0 +1,59 @@
+Removed Pin From Net: NetName=GND Pin=C4-1
+Removed Pin From Net: NetName=5V Pin=C4-2
+Removed Pin From Net: NetName=2.5V Pin=LM741-2
+Removed Pin From Net: NetName=GND Pin=LM741-4
+Removed Pin From Net: NetName=P1.1 Pin=LM741-6
+Removed Pin From Net: NetName=5V Pin=LM741-7
+Removed Pin From Net: NetName=NetC8_1 Pin=LT1632-3
+Removed Pin From Net: NetName=P1.1 Pin=R3-1
+Removed Pin From Net: NetName=5V Pin=R3-2
+Removed Member From Class: ClassName=guitar_tuner Member=LM741
+Removed Member From Class: ClassName=guitar_tuner Member=R17
+Removed Member From Class: ClassName=guitar_tuner Member=R18
+Change Component Designator: OldDesignator=C5 NewDesignator=C4
+Change Component Designator: OldDesignator=C12 NewDesignator=C11
+Change Component Designator: OldDesignator=C13 NewDesignator=C12
+Change Component Designator: OldDesignator=C14 NewDesignator=C13
+Change Component Designator: OldDesignator=C15 NewDesignator=C14
+Change Component Designator: OldDesignator=C16 NewDesignator=C15
+Change Component Designator: OldDesignator=C17 NewDesignator=C16
+Change Component Designator: OldDesignator=C18 NewDesignator=C17
+Change Component Designator: OldDesignator=LM386 NewDesignator=LM1
+Change Component Designator: OldDesignator=LM2940 NewDesignator=LM2
+Change Component Designator: OldDesignator=LT1632 NewDesignator=LT1
+Change Component Designator: OldDesignator=LTC1661 NewDesignator=LTC1
+Change Component Designator: OldDesignator=Power NewDesignator=Power1
+Change Component Designator: OldDesignator=R4 NewDesignator=R3
+Change Component Designator: OldDesignator=R6 NewDesignator=R4
+Change Component Designator: OldDesignator=R7 NewDesignator=R5
+Change Component Designator: OldDesignator=R8 NewDesignator=R6
+Change Component Designator: OldDesignator=R9 NewDesignator=R7
+Change Component Designator: OldDesignator=R10 NewDesignator=R8
+Change Component Designator: OldDesignator=R11 NewDesignator=R9
+Change Component Designator: OldDesignator=R12 NewDesignator=R10
+Change Component Designator: OldDesignator=R13 NewDesignator=R11
+Change Component Designator: OldDesignator=R14 NewDesignator=R12
+Change Component Designator: OldDesignator=R15 NewDesignator=R13
+Change Component Designator: OldDesignator=R16 NewDesignator=R14
+Change Component Designator: OldDesignator=R17 NewDesignator=R16
+Change Component Designator: OldDesignator=R18 NewDesignator=R15
+Change Component Designator: OldDesignator=SIP NewDesignator=SIP1
+Change Component Designator: OldDesignator=Switch NewDesignator=Switch1
+Added Pin To Net: NetName=P1.1 Pin=LT1-1
+Added Pin To Net: NetName=NetC8_1 Pin=LT1-5
+Change Net Name : Old Net Name=NetR14_1 New Net Name=NetR12_1
+Change Net Name : Old Net Name=NetR16_1 New Net Name=NetR14_1
+Change Net Name : Old Net Name=NetSIP_4 New Net Name=NetSIP1_4
+Added Pin To Net: NetName=NetC4_1 Pin=C4-1
+Added Pin To Net: NetName=NetC4_1 Pin=LT1-6
+Added Pin To Net: NetName=NetC4_1 Pin=R7-2
+Added Net: Name=NetC4_1
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=NetC4_2 Pin=LT1-2
+Added Pin To Net: NetName=NetC4_2 Pin=LT1-7
+Added Pin To Net: NetName=NetC4_2 Pin=R2-2
+Added Net: Name=NetC4_2
+Added Pin To Net: NetName=NetLT1_3 Pin=LT1-3
+Added Pin To Net: NetName=NetLT1_3 Pin=R4-2
+Added Pin To Net: NetName=NetLT1_3 Pin=R8-2
+Added Net: Name=NetLT1_3

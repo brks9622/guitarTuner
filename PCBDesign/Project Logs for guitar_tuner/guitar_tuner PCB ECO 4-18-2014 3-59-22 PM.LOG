@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=5V Pin=C11-1
+Removed Pin From Net: NetName=GND Pin=C11-2
+Removed Member From Class: ClassName=guitar_tuner Member=C11
